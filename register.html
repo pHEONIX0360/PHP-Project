@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <title>SupaBask Register</title>
+</head>
+<body>
+    <div class="login container grid">
+        <div class="login__register">
+            <img src="assets/img/SupaBask.png" alt="Logo" class="login__logo"/>
+            <h1 class="login__title">Create new <span class="supa">Supa</span><span class="bask">Bask</span> account.</h1>
+
+            <div class="login__area">
+                <form action="auth.php" method="post" class="login__form">
+                    <div class="login__content grid">
+                        <div class="login__group grid">
+                            <div class="login__box">
+                                <input type="text" name="username" id="username" required placeholder=" " class="login__input">
+                                <label for="username" class="login__label">User Name</label>
+                                <i class="ri-id-card-fill login__icon"></i>
+                            </div>
+                            <div class="login__box">
+                                <input type="text" name="shop_name" id="shop_name" required placeholder=" " class="login__input">
+                                <label for="shop_name" class="login__label">Shop Name</label>
+                                <i class="ri-id-card-fill login__icon"></i>
+                            </div>
+                        </div>
+                        <div class="login__box">
+                            <input type="email" name="email" id="email" required placeholder=" " class="login__input">
+                            <label for="email" class="login__label">Email</label>
+                            <i class="ri-mail-fill login__icon"></i>
+                        </div>
+                        <div class="login__box">
+                            <input type="password" name="password" id="passwordCreate" required placeholder=" " class="login__input">
+                            <label for="passwordCreate" class="login__label">Password</label>
+                            <i class="ri-eye-off-fill login__icon login__password" id="loginPasswordCreate"></i>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" class="login__button">Create account</button>
+                </form>
+                
+                <p class="login__switch">
+                    Already have an account? 
+                    <a href="login.html">Log In</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

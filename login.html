@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <title>SupaBask Login</title>
+</head>
+<body>
+    <div class="login container grid">
+        <div class="login__access">
+            <img src="assets/img/SupaBask.png" alt="Logo" class="login__logo"/>
+            <h1 class="login__title">Log in to your <span class="supa">Supa</span><span class="bask">Bask</span> account.</h1>
+
+            <div class="login__area">
+                <form action="auth.php" method="post" class="login__form">
+                    <div class="login__content grid">
+                        <div class="login__box">
+                            <input type="text" name="username" required placeholder=" " class="login__input">
+                            <label for="username" class="login__label">User Name</label>
+                            <i class="ri-mail-fill login__icon"></i>
+                        </div>
+                        <div class="login__box">
+                            <input type="password" name="password" required placeholder=" " class="login__input">
+                            <label for="password" class="login__label">Password</label>
+                            <i class="ri-eye-off-fill login__icon login__password" id="loginPassword"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="login__forgot">Forgot your password?</a>
+                    <button type="submit" name="submit" class="login__button">Login</button>
+                </form>
+                
+                <div class="login__social">
+                    <p class="login__social-title">Or login with</p>
+                    <div class="login__social-links">
+                        <a href="#" class="login__social-link">
+                            <img src="assets/img/icon-google.svg" alt="Google" class="login__social-img">
+                        </a>
+                        <a href="#" class="login__social-link">
+                            <img src="assets/img/icon-facebook.svg" alt="Facebook" class="login__social-img">
+                        </a>
+                        <a href="#" class="login__social-link">
+                            <img src="assets/img/icon-apple.svg" alt="Apple" class="login__social-img">
+                        </a>
+                    </div>
+                </div>
+                
+                <p class="login__switch">
+                    Don't have an account? 
+                    <a href="register.html">Create Account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
